@@ -20,3 +20,36 @@ Once, when I was doing another project the customer tightened the deadline and I
 I had never worked for any company before. I used to do orders from people I knew. Or did something for myself.<br>
  
 ---
+
+### My Skills:
+ 
+- HTML5, CSS3
+- JavaScript Basics
+- Git, GitHub
+- VS Code,
+- Adobe Photoshop, Adobe Premier Pro, Adobe Audition
+ 
+---
+
+**Find the odd int kata:**
+*Given an array of integers, find the one that appears an odd number of times.There will always be only one integer that appears an odd number of times.*
+ 
+```javascript
+function findOdd(A) {
+let objRes = {};
+for (let i = 0; i < A.length; i++) {
+    let n = A[i];
+    if (objRes[n] != undefined) {
+        objRes[n]++;
+    } else objRes[n] = 1;
+}
+let newArr = [];
+for (let key in objRes) {
+    if (objRes[key] % 2 !== 0) {
+        newArr.push(key);
+    }
+}
+return Math.max(newArr);
+}
+```
+---
